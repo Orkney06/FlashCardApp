@@ -15,7 +15,7 @@ function Content() {
   const [post, setPosts] = useState([])
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/posts/')
+    axios.get('https://flash-card-app-2022.herokuapp.com/api/posts/')
     .then(res => {
       setPosts(res.data)
     })
